@@ -23,10 +23,10 @@ def csvre():
 
         table.sort(key=lambda x: x['customer_average_rating'], reverse=True)
         highest = table[0]
-        name = highest['product_name']
-        max_product_rating = float(highest['customer_average_rating'])
+        product_name = highest['product_name']
+        product_rating = float(highest['customer_average_rating'])
 
-        return {"top_product": name, "product_rating": max_product_rating}
+        return {"top_product": product_name, "product_rating": product_rating}
 
 
 # The convert endpoint is used to convert the data from the csv file to json
@@ -46,8 +46,8 @@ async def conv(csv_file: UploadFile = File(...)):
             table.sort(key=lambda x: x['customer_average_rating'],
                        reverse=True)
             highest = table[0]
-            name = highest['product_name']
-            max_product_rating = float(highest['customer_average_rating'])
+            product_name = highest['product_name']
+            product_rating = float(highest['customer_average_rating'])
 
             unlink('files/destination.csv', dir_fd=None)
-            return {"top_product": name, "product_rating": max_product_rating}
+            return {"top_product": product_name, "product_rating": product_rating}
