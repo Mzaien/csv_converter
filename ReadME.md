@@ -1,4 +1,4 @@
-# Hello Resallers 👋
+# Hello Resalers 👋
 
 This is the read me for the taks that was give to me
 
