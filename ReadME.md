@@ -15,3 +15,6 @@ to run this repo you have to
   - here you have to choices
     - Open http client e.g postman, insoima , etc.
     - http://127.0.0.1:8000/docs and run the api from the docs
+
+## To try the api without runing the server 
+- Use this https://resal-csv-converter.mzaien.repl.co/docs
