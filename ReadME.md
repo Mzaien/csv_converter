@@ -18,3 +18,8 @@ to run this repo you have to
 
 ## To try the api without runing the server 
 - Use this https://resal-csv-converter.mzaien.repl.co/docs
+
+## To do unit tests 
+- Make sure you have insalled what is mentioned above 
+- `cd api`
+- run `pytest`
